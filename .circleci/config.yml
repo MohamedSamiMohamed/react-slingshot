@@ -22,7 +22,7 @@ jobs:
       - restore_cache:
           keys: 
             - "node-modules"
-      - run: npm i
+      # - run: npm i
       - run: npm run test
   analyze:
     docker: 
