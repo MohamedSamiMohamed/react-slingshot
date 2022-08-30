@@ -32,7 +32,7 @@ jobs:
       - restore_cache:
           keys: 
             - "node-modules"
-      - run: npm audit
+      - run: npm audit fix
         
 workflows:
   main-workflow:
