@@ -20,7 +20,7 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          key: 
+          keys: 
             - "node-modules"
       - run: npm i
       - run: npm run test
@@ -30,7 +30,7 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          key: 
+          keys: 
             - "node-modules"
       - run: npm audit
         
